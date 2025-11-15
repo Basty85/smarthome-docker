@@ -1,4 +1,4 @@
-Bridge homematic:bridge:1 "Bridge Homematic 1" [ gatewayAddress="127.0.0.1" ] {
+Bridge homematic:bridge:1 "Bridge Homematic 1" [ gatewayAddress="192.168.1.37" ] {
 
 //Jalousien und Rolladen EG
 //Wohnzimmer
