@@ -1,0 +1,50 @@
+{
+  "myLayout": {
+    "class": "org.openhab.core.ui.components.RootUIComponent",
+    "value": {
+      "uid": "myLayout",
+      "tags": [],
+      "props": {
+        "parameters": [],
+        "parameterGroups": []
+      },
+      "timestamp": "Nov 15, 2025, 11:42:01 PM",
+      "component": "oh-layout-page",
+      "config": {
+        "label": "stuff"
+      },
+      "slots": {
+        "canvas": [],
+        "default": [],
+        "grid": [],
+        "masonry": [
+          {
+            "component": "oh-masonry",
+            "config": {},
+            "slots": {
+              "default": [
+                {
+                  "component": "oh-clock-card",
+                  "config": {}
+                },
+                {
+                  "component": "oh-knob-card",
+                  "config": {}
+                },
+                {
+                  "component": "oh-rollershutter-card",
+                  "config": {
+                    "footer": "mööp",
+                    "stateInCenter": true,
+                    "title": "Wohnzimmer Mitte",
+                    "vertical": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

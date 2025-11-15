@@ -1,0 +1,26 @@
+{
+  "basti": {
+    "class": "org.openhab.core.auth.ManagedUser",
+    "value": {
+      "name": "basti",
+      "passwordHash": "F9lQn45zaPIvr96WP9p9QNk/gUsDBDv60ibQFHndita6Oi56xXwxUhsrtXjfeaGG4qc1zBYwXxYqSU+Wyc4WEw\u003d\u003d",
+      "passwordSalt": "9/qeGrvgbaV7Ht+h3yoh6Z4B/GsUGCnrXezjYx0S/WY39SNPNKOP1IOlWt1rOq8WHNo+55l3+irX8wNC8v8SfA\u003d\u003d",
+      "roles": [
+        "administrator"
+      ],
+      "sessions": [
+        {
+          "sessionId": "9dde947b-a64a-4122-855a-42f137adbfdf",
+          "refreshToken": "b08f54b3970e401498d9a69cf7e07009",
+          "createdTime": "Nov 15, 2025, 7:06:10 PM",
+          "lastRefreshTime": "Nov 15, 2025, 11:34:05 PM",
+          "clientId": "http://192.168.1.37:8080",
+          "redirectUri": "http://192.168.1.37:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        }
+      ],
+      "apiTokens": []
+    }
+  }
+}
