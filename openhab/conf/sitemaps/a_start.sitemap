@@ -28,14 +28,12 @@ sitemap start label="Sina's & Basti's Houzz" {
 
     }
 
-		Frame label="Jalousien" {
+	Frame label="Jalousien" {
 
-        Slider item=gSchlafzimmer label="Schlafzimmer" icon="blinds"
-				Slider item=gKind label="Kind" icon="blinds"
-				Slider item=gWohnzimmer label="Wohnzimmer" icon="blinds"
-    }
-
-    Frame label="Temperatur im Haus" {
+        Selection item=gSchlafzimmer label="Schlafzimmer" icon="blinds" mappings=[0.0="AUF", 0.15="15%", 0.20="20%", 0.30="30%", 0.50="50%", 0.80="80%", 1.0="ZU"]
+		Selection item=gKind label="Kind" icon="blinds" mappings=[0.0="AUF", 0.15="15%", 0.20="20%", 0.30="30%", 0.50="50%", 0.80="80%", 1.0="ZU"]
+		Selection item=gWohnzimmer label="Wohnzimmer" icon="blinds" mappings=[0.0="AUF", 0.15="15%", 0.20="20%", 0.30="30%", 0.50="50%", 0.80="80%", 1.0="ZU"]
+    }    Frame label="Temperatur im Haus" {
 
         Text item=temperatureSensorEntrance_Temperature label="Flur" icon="temperature"  	valuecolor=[Last_Update=="Uninitialized"="gray", >=25="orange", >=15="green", 0="white", <15="blue"]
 		    Text item=temperatureSensorHWR_Temperature  label="HWR" icon="temperature" 				valuecolor=[Last_Update=="Uninitialized"="gray", >=25="orange", >=15="green", 0="white", <15="blue"]

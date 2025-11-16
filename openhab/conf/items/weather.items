@@ -56,9 +56,9 @@ Number:Temperature   localDailyforecastHours24MinTemperature        "Minimaltemp
 Number:Temperature   localDailyforecastHours24MaxTemperature        "Maximaltemperatur für 24h [%.1f %unit%]"             <temperature>     { channel="openweathermap:weather-and-forecast:api:local:forecastHours24#max-temperature" }
 
 //Current UV Index
-DateTime             localCurrentUVIndexTimestamp               "Letzter Zeitstempel [%1$tY-%1$tm-%1$td]"             <time>    { channel="openweathermap:uvindex:api:local:current#time-stamp" }
-Number               localCurrentUVIndex                        "Aktueller UV Index [%d]"                                       { channel="openweathermap:uvindex:api:local:current#uvindex" }
+//DateTime             localCurrentUVIndexTimestamp               "Letzter Zeitstempel [%1$tY-%1$tm-%1$td]"             <time>    { channel="openweathermap:uvindex:api:local:current#time-stamp" }
+//Number               localCurrentUVIndex                        "Aktueller UV Index [%d]"                                       { channel="openweathermap:uvindex:api:local:current#uvindex" }
 
 //Tomorrow UV Index
-DateTime             localForecastTomorrowUVIndexTimestamp               "Zeitstempel [%1$tY-%1$tm-%1$td]"             <time>    { channel="openweathermap:uvindex:api:local:forecastTomorrow#time-stamp" }
-Number               localForecastTomorrowUVIndex                        "Morgiger UV Index [%d]"                                { channel="openweathermap:uvindex:api:local:forecastTomorrow#uvindex" }
+//DateTime             localForecastTomorrowUVIndexTimestamp               "Zeitstempel [%1$tY-%1$tm-%1$td]"             <time>    { channel="openweathermap:uvindex:api:local:forecastTomorrow#time-stamp" }
+//Number               localForecastTomorrowUVIndex                        "Morgiger UV Index [%d]"                                { channel="openweathermap:uvindex:api:local:forecastTomorrow#uvindex" }
