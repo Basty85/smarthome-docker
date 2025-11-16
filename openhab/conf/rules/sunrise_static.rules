@@ -7,13 +7,13 @@ when
 then
 
     //Rolläden
-    musicRoomShutter_Pos.sendCommand(0)
+    musicRoomShutter_Pos.sendCommand(0.0)
     Thread::sleep(100)
-    wcShutter_Pos.sendCommand(0)
+    wcShutter_Pos.sendCommand(0.0)
     Thread::sleep(100)
-    officeShutter_Pos.sendCommand(0)
+    officeShutter_Pos.sendCommand(0.0)
     Thread::sleep(100)
-    bathShutter_Pos.sendCommand(0)
+    bathShutter_Pos.sendCommand(0.0)
     Thread::sleep(100)
     
     //Jalousien
