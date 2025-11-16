@@ -1,6 +1,5 @@
 //Lampen
 //Hue Musikzimmer
-Group gLightsMusikzimmer
 
 Switch   lightStrip_Front_Switch "Schalter"   (gLightsMusikzimmer)      { channel="hue:0210:1:lightStrip1:color" }
 Color    lightStrip_Front_Color         (gLightsMusikzimmer)            { channel="hue:0210:1:lightStrip1:color" }
@@ -23,7 +22,6 @@ Dimmer  entranceLight_ColorTemp "Farbtemperatur"        { channel="hue:0220:1:ma
 Dimmer  entranceLight_Dimmer    "Dimmer"                { channel="hue:0220:1:mainEntranceLight:brightness" }
 
 //Hue Wohn-/Esszimmer
-Group gLightsWohnzimmer
 
 Switch   hueColorDeathstar_Switch "Schalter"    (gLightsWohnzimmer)    { channel="hue:0210:1:hueColor1:color" }
 Color    hueColorDeathstar_Color           (gLightsWohnzimmer)             { channel="hue:0210:1:hueColor1:color" }
@@ -46,7 +44,6 @@ Color   lightStripDining_Color            (gLightsWohnzimmer)             { chan
 //Dimmer  lightStripDining_ColorTemp     (gLightsWohnzimmer)     { channel="hue:0210:1:lightStrip5:color_temperature" }
 
 //Outdoor
-Group gLightsOutdoor
 
 
 Switch  lightStripFlowers_Switch  "Schalter"  (gLightsOutdoor)     { channel="hue:0210:1:lightStrip6:color" }

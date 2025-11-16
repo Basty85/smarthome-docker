@@ -1,0 +1,44 @@
+// ============================================================================
+// Gruppen-Definitionen für OpenHAB
+// ============================================================================
+
+// ----------------------------------------------------------------------------
+// Raum-Gruppen (Semantic Model)
+// ----------------------------------------------------------------------------
+Group gHWR "Hauswirtschaftsraum" ["Laundry"]
+Group gOutdoor "Draußen" ["Outdoor"]
+Group gLivingRoom "Wohnzimmer" ["LivingRoom"]
+Group gDining "Esszimmer" ["DiningRoom"]
+Group gMusicRoom "Musikzimmer" ["Room"]
+Group gEntrance "Flur EG" ["Corridor"]
+Group gStairsUG "Treppenhaus UG" ["Corridor"]
+Group gBasement "Keller UG" ["Cellar"]
+Group gBedroom "Schlafzimmer" ["Bedroom"]
+Group gChildRoom "Kinderzimmer" ["Bedroom"]
+Group gChangeRoom "Ankleide" ["Room"]
+Group gOffice "Büro" ["Office"]
+Group gBathOG "Bad OG" ["Bathroom"]
+Group gWC "WC EG" ["Bathroom"]
+
+// ----------------------------------------------------------------------------
+// Funktions-Gruppen (nach Gerätetyp)
+// ----------------------------------------------------------------------------
+Group:Switch:OR(ON,OFF) gLights "Alle Lichter" ["Lightbulb"]
+Group:Rollershutter gShutters "Alle Jalousien" ["Blinds"]
+Group:Contact:OR(OPEN,CLOSED) gMotionSensors "Alle Bewegungsmelder" ["MotionDetector"]
+Group gTemperatureSensors "Alle Temperatursensoren" ["Sensor"]
+Group gLightSensors "Alle Helligkeitssensoren" ["Sensor"]
+
+// ----------------------------------------------------------------------------
+// Spezielle Jalousien-Gruppen (pro Raum)
+// ----------------------------------------------------------------------------
+Group:Rollershutter gWohnzimmer "Jalousien Wohnzimmer" (gLivingRoom, gShutters)
+Group:Rollershutter gSchlafzimmer "Jalousien Schlafzimmer" (gBedroom, gShutters)
+Group:Rollershutter gKind "Jalousien Kinderzimmer" (gChildRoom, gShutters)
+
+// ----------------------------------------------------------------------------
+// Spezielle Licht-Gruppen (pro Raum)
+// ----------------------------------------------------------------------------
+Group gLightsMusikzimmer "Lichter Musikzimmer" (gMusicRoom, gLights)
+Group gLightsWohnzimmer "Lichter Wohnzimmer" (gLivingRoom, gLights)
+Group gLightsOutdoor "Lichter Draußen" (gOutdoor, gLights)

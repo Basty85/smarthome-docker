@@ -1,7 +1,5 @@
 //Jalousien und Rolladen EG
 //Wohnzimmer
-Group:Rollershutter gWohnzimmer
-
 Number               livingRoomShutterLeft_SignalStrength   "Signalstärke [%d]"         { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD050BF2A4:0#SIGNAL_STRENGTH" }
 Number:Dimensionless livingRoomShutterLeft_CurrentPos       "Aktuelle Position [%d %%]"   { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD050BF2A4:1#CURRENT_POSITION" }
 Number:Dimensionless livingRoomShutterLeft_CurrentAng       "Aktueller Winkel [%d %%]"    { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD050BF2A4:1#CURRENT_ANGLE" }
@@ -53,8 +51,6 @@ Number:Dimensionless wcShutter_Pos              "Position [%d %%]"  <rollershutt
 
 //Jalousien und Rolladen OG
 //Schlafen
-Group:Rollershutter gSchlafzimmer
-
 Number               bedRoomShutterLeft_SignalStrength   "Signalstärke [%d]"  (gSchlafzimmer)       { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD0507DD7A:0#SIGNAL_STRENGTH" }
 Number:Dimensionless bedRoomShutterLeft_CurrentPos       "Aktuelle Position [%d %%]"  (gSchlafzimmer)  { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD0507DD7A:1#CURRENT_POSITION" }
 Number:Dimensionless bedRoomShutterLeft_CurrentAng       "Aktueller Winkel [%d %%]"  (gSchlafzimmer)   { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD0507DD7A:1#CURRENT_ANGLE" }
@@ -78,9 +74,6 @@ Number:Dimensionless bedRoomShutterUp_Ang              "Winkel [%d %%]"   (gSchl
 
 
 //Kind
-Group:Rollershutter gKind
-
-
 Number               childRoomShutterLeft_SignalStrength   "Signalstärke [%d]" (gKind)         { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD0507DEB1:0#SIGNAL_STRENGTH" }
 Number:Dimensionless childRoomShutterLeft_CurrentPos       "Aktuelle Position [%d %%]" (gKind)   { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD0507DEB1:1#CURRENT_POSITION" }
 Number:Dimensionless childRoomShutterLeft_CurrentAng       "Aktueller Winkel [%d %%]"  (gKind)   { channel="homematic:HG-OPUS-BRiDGE-Blind--563-031-:1:EOD0507DEB1:1#CURRENT_ANGLE" }
